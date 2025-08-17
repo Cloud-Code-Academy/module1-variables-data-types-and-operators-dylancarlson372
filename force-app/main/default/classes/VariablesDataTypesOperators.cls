@@ -349,13 +349,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return A Decimal representing the monthly paycheck.
      */
     public static Decimal calculateMonthlyPaycheck(Decimal hourlyRate, Double numberOfHours) {
-        return null; // Replace null with the variable you used to store the result
-
-        //First calculate the weekly paycheck and store it in a variable.
-        // Decimal weeklyPaycheck = hourlyRate * numberOfHours;
-        // //Then calculate the monthly paycheck and store it in a variable.
-        // Decimal monthlyPaycheck = weeklyPaycheck * 4;
-        // return monthlyPaycheck; // Replace null with the variable you used to store the result
+        Decimal weeklyPaycheck = hourlyRate * numberOfHours;
+        Decimal monthlyPaycheck = weeklyPaycheck * 4;
+        if (hourlyRate == null || numberOfHours == null) {
+            return null; // Replace null with the variable you used to store the result
+        }
+        return monthlyPaycheck;
     }
 
     /**
