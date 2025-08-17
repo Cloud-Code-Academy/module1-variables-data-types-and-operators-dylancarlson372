@@ -33,7 +33,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer addition(Integer a, Integer b) {
         if (a == null || b == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         Integer result = a + b;
         return result;
@@ -49,7 +49,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer subtraction(Integer a, Integer b) {
         if (a == null || b == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         Integer result = a - b;
         return result;
@@ -65,7 +65,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer multiplication(Integer a, Integer b) {
         if (a == null || b == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         Integer result = a * b;
         return result;
@@ -82,7 +82,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Double division(Double a, Double b) {
         if (a == null || b == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         } else if (b == 0) {
             return 0;
         }
@@ -102,7 +102,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Boolean isEven(Integer num) {
         if (num == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         return Math.mod(num, 2) == 0;
     }
@@ -116,7 +116,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Boolean isPositive(Integer num) {
         if (num == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         return num > 0;
     }
@@ -131,7 +131,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static String concatenateStrings(String str1, String str2) {
         String result = str1 + str2;
-        return result; // Replace null with the variable you used to store the result
+        return result;
     }
 
 	/**
@@ -147,7 +147,7 @@ public with sharing class VariablesDataTypesOperators {
 	 */
 	public static String createSentence(String noun, String verb, String endingPunctuation) {
         String result = ('The' + ' ' + noun + ' ' + 'is' + ' ' + verb + endingPunctuation);
-		return result; // Replace null with the variable you used to store the result
+		return result;
 	}
 
     /**
@@ -161,7 +161,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Boolean isDateInPast(Date dt) {
         if (dt == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         return dt < Date.today();
     }
@@ -177,7 +177,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Boolean isDateTodayOrFuture(Date dt) {
         if (dt == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         return dt >= Date.today();
     }
@@ -195,7 +195,7 @@ public with sharing class VariablesDataTypesOperators {
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
         Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
         if (minutes == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         return milliseconds;
     }
@@ -212,7 +212,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Double averageOfThreeNumbers(Integer a, Integer b, Integer c) {
         if (a == null || b == null || c == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         Double sumOfNumbers = a + b + c;
         Double totalNumbers = 3;
@@ -236,7 +236,7 @@ public with sharing class VariablesDataTypesOperators {
 
         // Return the result
         if (a == null || b == null || c == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         return result;
     }
@@ -251,7 +251,7 @@ public with sharing class VariablesDataTypesOperators {
         // The result of the expression as it is right now is 43. 
         // You should add parentheses so that the result of the expression becomes 8.
         Integer answer = (48 - ((15 + 5) * 2));
-        return answer; // Replace null with the variable you used to store the result
+        return answer;
     }
 
     /**
@@ -272,7 +272,7 @@ public with sharing class VariablesDataTypesOperators {
         // Add parentheses around the multiplication and subtraction operations so that they are performed before division and addition
         Double result = (a * b - c) / (Double) d + e;
         if (a == null || b == null || c == null || d == null || e == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         return result;
     }
@@ -290,7 +290,7 @@ public with sharing class VariablesDataTypesOperators {
         final Double DIVIDE_FACTOR = 9.0;
         Double celsius = (fahrenheit - SUBTRACT_FACTOR) * MULTIPLY_FACTOR/DIVIDE_FACTOR;
         if (fahrenheit == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         return celsius;
     }
@@ -311,7 +311,7 @@ public with sharing class VariablesDataTypesOperators {
         // Write the code for type casting the divisionResult to an Integer
         Integer roundedResult = (Integer) divisionResult;
         if (a == null || b == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         return roundedResult;
     }
@@ -329,7 +329,7 @@ public with sharing class VariablesDataTypesOperators {
         // Calculate the weekly paycheck using the formula: rate multiplied by hours
         Decimal weeklyPaycheck = hourlyRate * numberOfHours;
         if (hourlyRate == null || numberOfHours == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         return weeklyPaycheck;
     }
@@ -348,7 +348,7 @@ public with sharing class VariablesDataTypesOperators {
         Decimal weeklyPaycheck = hourlyRate * numberOfHours;
         Decimal monthlyPaycheck = weeklyPaycheck * 4;
         if (hourlyRate == null || numberOfHours == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         return monthlyPaycheck;
     }
@@ -366,7 +366,7 @@ public with sharing class VariablesDataTypesOperators {
     public static Decimal calculateTotalCost(Decimal pricePerUnit, Integer numberOfUnits, Decimal salesTaxRate) {
         Decimal totalCost = (pricePerUnit * numberOfUnits) * (1 + salesTaxRate);
         if (pricePerUnit == null || numberOfUnits == null || salesTaxRate == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
         return totalCost;
     }
