@@ -292,11 +292,12 @@ public with sharing class VariablesDataTypesOperators {
         final Double SUBTRACT_FACTOR = 32.0;
         final Double MULTIPLY_FACTOR = 5.0;
         final Double DIVIDE_FACTOR = 9.0;
-    
-        return null; // Replace null with the variable you used to store the result
+        Double celsius = (fahrenheit - SUBTRACT_FACTOR) * MULTIPLY_FACTOR/DIVIDE_FACTOR;
+        if (fahrenheit == null) {
+            return null; // Replace null with the variable you used to store the result
+        }
+        return celsius;
     }
-
-    
 
     /**
      * Question 17
