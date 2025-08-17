@@ -331,7 +331,11 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal calculateWeeklyPaycheck(Decimal hourlyRate, Double numberOfHours) {
         // Calculate the weekly paycheck using the formula: rate multiplied by hours
-        return null; // Replace null with the variable you used to store the result
+        Decimal weeklyPaycheck = hourlyRate * numberOfHours;
+        if (hourlyRate == null || numberOfHours == null) {
+            return null; // Replace null with the variable you used to store the result
+        }
+        return weeklyPaycheck;
     }
 
     /**
@@ -346,6 +350,12 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal calculateMonthlyPaycheck(Decimal hourlyRate, Double numberOfHours) {
         return null; // Replace null with the variable you used to store the result
+
+        //First calculate the weekly paycheck and store it in a variable.
+        // Decimal weeklyPaycheck = hourlyRate * numberOfHours;
+        // //Then calculate the monthly paycheck and store it in a variable.
+        // Decimal monthlyPaycheck = weeklyPaycheck * 4;
+        // return monthlyPaycheck; // Replace null with the variable you used to store the result
     }
 
     /**
