@@ -34,10 +34,9 @@ public with sharing class VariablesDataTypesOperators {
     public static Integer addition(Integer a, Integer b) {
         if (a == null || b == null) {
             return null; // Replace null with the variable you used to store the result
-        } else {
-            Integer result = a + b;
-            return result;
         }
+        Integer result = a + b;
+        return result;
     }
 
     /**
@@ -51,10 +50,9 @@ public with sharing class VariablesDataTypesOperators {
     public static Integer subtraction(Integer a, Integer b) {
         if (a == null || b == null) {
             return null; // Replace null with the variable you used to store the result
-        } else {
-            Integer result = a - b;
-            return result;
         }
+        Integer result = a - b;
+        return result;
     }
 
     /**
@@ -68,10 +66,9 @@ public with sharing class VariablesDataTypesOperators {
     public static Integer multiplication(Integer a, Integer b) {
         if (a == null || b == null) {
             return null; // Replace null with the variable you used to store the result
-        } else {
-            Integer result = a * b;
-            return result;
         }
+        Integer result = a * b;
+        return result;
     }
 
     /**
@@ -88,10 +85,9 @@ public with sharing class VariablesDataTypesOperators {
             return null; // Replace null with the variable you used to store the result
         } else if (b == 0) {
             return 0;
-        } else {
-            Decimal result = a / b;
-            return result;
         }
+        Double result = a / b;
+        return result;
     }
 
     /**
