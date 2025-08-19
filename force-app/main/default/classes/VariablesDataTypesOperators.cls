@@ -193,10 +193,10 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static final Integer MILLISECONDS_PER_MINUTE = 60000; // Make this value a constant
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
-        Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
         if (minutes == null) {
             return null;
         }
+        Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
         return milliseconds;
     }
 
